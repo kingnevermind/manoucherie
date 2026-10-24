@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Orval 33 cl",
+    "initial": 1,
+    "priceCents": 360
+  },
+  {
+    "id": 2,
+    "name": "Piggy Brewing - OG Torpedo 44 cl",
+    "initial": 1,
+    "priceCents": 850
+  },
+  {
+    "id": 3,
+    "name": "La Débauche - Nevermore 33 cl",
+    "initial": 1,
+    "priceCents": 495
+  },
+  {
+    "id": 4,
+    "name": "Mont Hardi - Supernova 33 cl",
+    "initial": 4,
+    "priceCents": 395
+  },
+  {
+    "id": 5,
+    "name": "Nautile - Abyssal Banshee 44 cl",
+    "initial": 1,
+    "priceCents": 695
+  },
+  {
+    "id": 6,
+    "name": "Game Over - Cyber Protocol 44 cl",
+    "initial": 1,
+    "priceCents": 680
+  },
+  {
+    "id": 7,
+    "name": "Nautile - Grave Pleasure 44 cl",
+    "initial": 1,
+    "priceCents": 648
+  },
+  {
+    "id": 8,
+    "name": "La Débauche - Carus IPA 50 cl",
+    "initial": 2,
+    "priceCents": 405
+  },
+  {
+    "id": 9,
+    "name": "Guinness Extra Stout 33 cl",
+    "initial": 6,
+    "priceCents": 247
+  },
+  {
+    "id": 10,
+    "name": "La Débauche - NEIPA 75 cl",
+    "initial": 1,
+    "priceCents": 535
+  },
+  {
+    "id": 11,
+    "name": "Ste Cru - Orange Mécanique 75 cl",
+    "initial": 1,
+    "priceCents": 625
+  },
+  {
+    "id": 12,
+    "name": "Bifrost - IPA 75 cl",
+    "initial": 1,
+    "priceCents": 702
+  },
+  {
+    "id": 13,
+    "name": "Mont Hardi - Sirona 75 cl",
+    "initial": 1,
+    "priceCents": 535
+  },
+  {
+    "id": 14,
+    "name": "Bifrost - IPA 33 cl",
+    "initial": 2,
+    "priceCents": 360
+  },
+  {
+    "id": 15,
+    "name": "Chimay Bleue 33 cl",
+    "initial": 2,
+    "priceCents": 235
+  },
+  {
+    "id": 16,
+    "name": "Rochefort 8 - 33 cl",
+    "initial": 3,
+    "priceCents": 295
+  },
+  {
+    "id": 17,
+    "name": "St Bernardus Abt 12 - 33 cl",
+    "initial": 2,
+    "priceCents": 295
+  },
+  {
+    "id": 18,
+    "name": "Rochefort 10 - 33 cl",
+    "initial": 1,
+    "priceCents": 345
+  },
+  {
+    "id": 19,
+    "name": "Chimay Triple 33 cl",
+    "initial": 1,
+    "priceCents": 245
+  },
+  {
+    "id": 20,
+    "name": "Duvel 33 cl",
+    "initial": 1,
+    "priceCents": 235
+  }
+]

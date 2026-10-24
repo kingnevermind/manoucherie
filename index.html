@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#151b24"><meta name="description" content="Inventaire de bières et calcul des consommations">
+<link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./icon.svg" type="image/svg+xml">
+<title>Inventaire bières</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:#10151c;color:#f3f5f7}
+*{box-sizing:border-box}body{margin:0;padding:0 0 100px}header{padding:22px 18px 12px;max-width:800px;margin:auto}
+h1{font-size:1.7rem;margin:0 0 5px}p{color:#aab5c4;margin:5px 0 14px;line-height:1.5}
+main{max-width:800px;margin:auto;padding:0 12px}.summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:8px 0 18px}
+.metric{background:#1c2530;border:1px solid #334152;border-radius:16px;padding:15px}
+.metric b{font-size:1.65rem;display:block;margin-top:6px}.metric small{color:#b4c0ce}
+.card{background:#1a222c;border:1px solid #303c49;border-radius:14px;padding:13px;margin:9px 0;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.name{font-weight:650;line-height:1.3}.details{font-size:.83rem;color:#aeb9c6;margin-top:6px}
+.controls{display:flex;align-items:center;gap:9px;flex-shrink:0}.controls button{width:42px;height:42px;font-size:1.5rem;border:0;border-radius:12px;background:#344658;color:white;cursor:pointer}
+.controls button:disabled{opacity:.25}.count{min-width:23px;text-align:center;font-size:1.15rem;font-weight:750}
+h2{font-size:1.05rem;margin:22px 6px 9px}.actions{display:flex;flex-wrap:wrap;gap:10px;margin:20px 3px}
+.action{background:#344658;border:1px solid #506176;color:white;border-radius:11px;padding:12px 15px;font-size:.95rem;cursor:pointer}
+.primary{background:#d6a24a;color:#181a1d;border-color:#d6a24a;font-weight:700}
+.note{font-size:.82rem;color:#b2bdc9;margin:10px 4px}input[type=file]{display:none}
+footer{position:fixed;bottom:0;left:0;right:0;background:#151e28;border-top:1px solid #435161;padding:12px 18px max(12px,env(safe-area-inset-bottom));display:flex;justify-content:space-between;align-items:center;gap:8px}
+footer strong{font-size:1.45rem;color:#f4c577}footer span{color:#b9c4cf;font-size:.85rem}
+@media(max-width:390px){.controls{gap:5px}.controls button{width:36px;height:40px}.card{padding:10px}.name{font-size:.92rem}}
+</style></head><body>
+<header><h1>🍺 Inventaire bières</h1><p>Indique les <strong>quantités restantes</strong> après le week-end. Le coût des bières bues se calcule tout seul.</p></header>
+<main>
+<section class="summary" aria-label="Bilan">
+<div class="metric"><small>Bières consommées</small><b id="drunk">0 / 34</b></div>
+<div class="metric"><small>Bières restantes</small><b id="left">34</b></div>
+<div class="metric"><small>Valeur consommée</small><b id="spent">0,00 €</b></div>
+<div class="metric"><small>Valeur restante</small><b id="remaining">134,87 €</b></div>
+</section>
+<h2>Quantités restantes</h2><div id="list"></div>
+<div class="actions">
+<button class="action primary" id="export">Sauvegarder (JSON)</button>
+<label class="action" for="import">Restaurer une sauvegarde</label><input id="import" type="file" accept=".json,application/json">
+<button class="action" id="reset">Réinitialiser</button>
+</div>
+<p class="note">Prix du ticket après remises. Les consignes sont exclues du coût des bières (elles peuvent être calculées séparément). Les données sont enregistrées dans ce navigateur, sur cet appareil. Exporter régulièrement un JSON vers Proton Drive.</p>
+<p class="note" id="status" role="status"></p>
+</main><footer><span>Coût des bières bues</span><strong id="footerTotal">0,00 €</strong></footer>
+<script src="./app.js" defer></script></body></html>

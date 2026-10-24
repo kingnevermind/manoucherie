@@ -1,0 +1,18 @@
+{
+  "name": "Inventaire bières",
+  "short_name": "Bières",
+  "description": "Suivi des bières restantes et du coût consommé",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#10151c",
+  "theme_color": "#151b24",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
