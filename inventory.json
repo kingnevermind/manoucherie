@@ -118,5 +118,17 @@
     "name": "Duvel 33 cl",
     "initial": 1,
     "priceCents": 235
+  },
+  {
+    "id": 21,
+    "name": "1664 33 cl",
+    "initial": 6,
+    "priceCents": 93
+  },
+  {
+    "id": 22,
+    "name": "Pelforth Brune 25 cl",
+    "initial": 6,
+    "priceCents": 90
   }
 ]

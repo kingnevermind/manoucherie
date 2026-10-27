@@ -25,15 +25,15 @@ footer strong{font-size:1.45rem;color:#f4c577}footer span{color:#b9c4cf;font-siz
 <header><h1>🍺 Inventaire bières</h1><p>Indique les <strong>quantités restantes</strong> après le week-end. Le coût des bières bues se calcule tout seul.</p></header>
 <main>
 <section class="summary" aria-label="Bilan">
-<div class="metric"><small>Bières consommées</small><b id="drunk">0 / 34</b></div>
-<div class="metric"><small>Bières restantes</small><b id="left">34</b></div>
+<div class="metric"><small>Bières consommées</small><b id="drunk">0 / 46</b></div>
+<div class="metric"><small>Bières restantes</small><b id="left">46</b></div>
 <div class="metric"><small>Valeur consommée</small><b id="spent">0,00 €</b></div>
-<div class="metric"><small>Valeur restante</small><b id="remaining">134,87 €</b></div>
+<div class="metric"><small>Valeur restante</small><b id="remaining">145,85 €</b></div>
 </section>
 <h2>Quantités restantes</h2><div id="list"></div>
 <div class="actions">
 <button class="action primary" id="export">Sauvegarder (JSON)</button>
-<label class="action" for="import">Restaurer une sauvegarde</label><input id="import" type="file" accept=".json,application/json">
+<button class="action" id="restore" disabled>Restaurer une sauvegarde</button><input id="import" type="file" accept=".json,application/json">
 <button class="action" id="reset">Réinitialiser</button>
 </div>
 <p class="note">Prix du ticket après remises. Les consignes sont exclues du coût des bières (elles peuvent être calculées séparément). Les données sont enregistrées dans ce navigateur, sur cet appareil. Exporter régulièrement un JSON vers Proton Drive.</p>
